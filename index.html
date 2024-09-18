@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Sección de cabecera -->
+    <header>
+      <nav class="cabecera__container">
+        <div>
+          <a href="#menu__experiencia" class="cabecera__menu">Experiencia</a>
+          <a href="#menu__proyectos" class="cabecera__menu">Proyectos</a>
+          <a href="#menu_sobre_mi"class="cabecera__menu">Sobre mi</a>
+          <a href="#menu__contacto" class="cabecera__menu">Contacto</a>
+           
+        </div>
+      </nav>
+    </header>
+    <!-- Seccion de presentación -->
+    <section class="presentacion">
+      <h1>Hola! soy Sebastián</h1>
+      <p>
+        Soy un desarrollador frontend trainee con certificacion en UX y
+        actualmente estoy participando del proyecto Oracle ONE en Alura Latam.
+      </p>
+      <div class="botones__presentacion">
+        <button onclick="git('https://github.com/FranciscoDiaz01')" type="button" class="boton_presentacion_redes">GitHub</button>
+        <button onclick="link('https://www.linkedin.com/in/francisco-diaz-robledo/')" type="button" class="boton_presentacion_redes" id="boton__linkedin">LinkedIn</button>
+      </div>
+      <div class="seccion__logotipos">
+        <img class="logotipo" src="img/logotipo/html5.svg" alt="logo de html">
+        <img class="logotipo" src="img/logotipo/css.svg" alt="logo de css">
+        <img class="logotipo" src="img/logotipo/javascript.svg" alt="logo de javascript">
+        <img class="logotipo" src="img/logotipo/react.svg" alt="logo de react">
+        <img class="logotipo" id="logo__python" src="img/logotipo/python.svg" alt="logo de python">
+        <img class="logotipo" src="img/logotipo/canva.svg" alt="logo tipo de canva">
+        <img class="logotipo" id="logo__figma" src="img/logotipo/figma.svg" alt="logo de figma">
+       </div>
+    </section>
+    
+    <!-- Sección experiencia laboral -->
+    <section class="experiencia__laboral" id="menu__experiencia">
+      <h2>Experiencia laboral</h2>
+      <div class="experiencia">
+        <h3>Elecciones 2024 </h3>
+        <p>
+          Actualmente creo contenido digital para la campaña de elecciones 2024
+          para la postulante Melissa Quiroz quien postula al cargo de concejal
+          por la comuna de Villa Alemana, Chile.
+        </p>
+      </div>
+      <div class="experiencia">
+        <h3>Transportes TDN</h3>
+        <p>
+          Uno de mis primeros acercamientos al área donde estuve a cargo de la creación y mantenimiento la pagina web de la
+          empresa de transportes TDN a travez de la plataforma Wix. Tambien cree
+          contenido digital como logo, flyers y presentaciones digitales.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección de proyectos -->
+    <section class="seccion__proyectos" id="menu__proyectos">
+      <h2>Proyectos</h2>
+      <div class="lista__proyectos"></div>
+        <div class="proyecto">
+          <a href="https://franciscodiaz01.github.io/Proyecto-AluraPlay/" target="_blank" rel="noopener noreferrer">
+            <img class="floating" src="img/proyectos/alura_play.png" alt="imagen de un sitio de videos">
+          </a>
+            <p><strong>Proyecto Alura Play:</strong> es un proyecto del programa ONE de Oracle por Alura Latam donde se pone en practica todo lo referente a Flexbox.</p>
+        </div>
+        <div class="proyecto__reverso">
+            <a href="https://franciscodiaz01.github.io/Succulent-Shop/" target="_blank" rel="noopener noreferrer">
+                <img class="floating" src="img/proyectos/codingdojo.png" alt="imagen de una tienda de plantas">
+            </a>
+            
+            <p><strong>Proyecto Succulent Shop:</strong> es un proyecto de Coding Dojo que corresponde al examen final del bootcamp de desarrollo frontend.</p>
+        </div>
+        <div class="proyecto">
+            <a href="https://franciscodiaz01.github.io/Encriptador-de-texto/" target="_blank" rel="noopener noreferrer">
+                <img class="floating" src="img/proyectos/encriptador.png" alt="imagen de pagina web"> 
+            </a>
+            <p><strong>Proyecto Encriptador de Texto:</strong> desafio final correspondiente al proceso de selección del programa ONE de Oracle por Alura Latam.</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Sección sobre mi -->
+     <section class="sobre__mi">
+        <div class="sobre__mi__texto" id="menu_sobre_mi">
+            <h2>Sobre mí</h2>
+            <p>Me llamo Francisco Sebastián pero mis amigos me llaman Seba. Empece en la programación en el 2023 realizando un bootcamp de Coding Dojo.</p>
+            <p>Actualmente estoy cursando el programa ONE de Oracle donde realizo una especialidad en el área de frontend, lo cual me ayuda a profundizar y complementar mis conocimientos adquiridos previamente.</p>  
+            <p>Como desarrollador frontend trainee mi objetivo es mejorar mis conocimientos y habilidades gracias a la mejora continua para poder desarrollarme profesionalmente en el área y poder seguir adquiriendo nuevos conociemientos.</p>
+        </div>
+         <img src="img/sobremi/sobre_mi.png" class="sobre__mi__img"  alt="">
+     </section>
+     
+
+    <!-- Sección de Contacto -->
+    <section class="contacto" id="menu__contacto">
+      <h2>Contactacme haciendo click en el icono</h2>
+        
+        <a href="mailto:correo@ejemplo.com"><img src="img/logotipo/logotipo_correo.svg" class="floating"> </a>
+
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>

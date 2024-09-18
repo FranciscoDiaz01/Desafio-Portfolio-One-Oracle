@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+:root {
+	--blue: #23aaff;
+	--purple: #4562f2;
+	--pink: #7a45f8;
+	--coral: #bb0bf6;
+	--orange: #fc2953;
+	--yellow: #ffc743;
+	--bg: #000000;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;;
+    /* background-color: #34495e; color original*/
+    /*background-color: #212f3d; */
+    background-color: #212f3d;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%2346505a' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    position: relative;
+    width: 100%; 
+    height: 100vh;
+    overflow: auto;
+    font-size: 20px;
+    color: white;
+    box-sizing: border-box;
+    
+    
+
+}
+
+/* Sección de cabecera */
+/* /* .cabecera__container{
+    height: 100px;
+    width: 100%; 
+    
+} */
+
+.cabecera__menu{
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 10px;
+    text-shadow: 0 0 8px #a569bd;
+    
+    
+}
+
+/* Sección de presentación */
+h1 {
+	font-family: "Permanent Marker", cursive;
+	letter-spacing: 2px;
+	font-size: 40px;
+	background-image: linear-gradient(
+		45deg,
+		var(--blue) 3%,
+		var(--purple) 20%,
+		var(--pink) 36%,
+		var(--coral) 52%,
+		var(--orange) 69%,
+		var(--yellow) 100%
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	background-size: 100%;
+} 
+
+
+.presentacion{
+    width: 800px;  
+    height: 300px;
+    padding-top: 50px;
+    padding-left: 200px;
+}
+
+
+/* Sección botones*/ 
+button {
+    width: 180px;
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    /* background-color: #2ba8fb; */
+    background-color: #f5b041;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+button:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+  
+button:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+
+/* Sección experiencia laboral */
+
+.experiencia__laboral{
+    padding-left: 200px;
+    padding-right: 300px;
+    
+    
+    
+}
+
+.experiencia__laboral h2{
+    font-family: "Permanent Marker", cursive;
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #f5b041;
+    
+}
+
+
+.experiencia {
+    width: 800px;
+    margin-bottom: 80px;
+    
+    
+    
+}
+
+/* Sección de proyectos */
+.seccion__proyectos{
+    padding-left: 200px;
+    padding-right: 300px;
+}
+
+.seccion__proyectos h2{
+    font-family: "Permanent Marker", cursive;
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #f5b041;
+}
+
+.proyecto img{
+    height: 303px;
+    width: 380px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+strong {
+    font-weight: 700; 
+    color: #fc2953;
+    text-shadow: 0 0 8px #9b59b6;
+}
+
+
+/* Efecto maquina de escribir "Hola soy Francisco"  
+span{
+
+    display: block;
+    font-family: monospace;
+    font-size: 40px;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 19ch;
+    animation: typing 2s steps(19), blink .5s infinite step-end alternate;
+    overflow: hidden;   
+    }
+    
+    @keyframes typing {
+        from { width: 0;}
+    }
+    
+    @keyframes blink {
+        50% { border-color: transparent;}
+    } */
+
+
+
+/* Sección sobre mi */
+.sobre__mi{
+    padding-left: 200px;
+    padding-right: 200px;
+    
+}
+
+.sobre__mi__texto h2{
+    font-family: "Permanent Marker", cursive;
+    font-size: 30px;
+    color: #f5b041;
+}
+
+.sobre__mi__img{
+    height: 403px;
+    width: 580;
+}
+
+/* Sección de contacto */
+.contacto{
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+    padding-left: 200px;
+}
+
+.contacto h2{
+    font-family: "Permanent Marker", cursive;
+    font-size: 30px;
+    color: #f5b041;
+
+}
+
+.contacto a{
+    text-decoration: none;
+}
+
+.contacto img{
+    width: 380px;
+    height: 203px;
+    
+}
+
+/* Sección logotipos */
+.seccion__logotipos{
+    display: flex;
+    align-items: center;
+    
+}
+
+.logotipo{
+    width: 22px;
+    margin: 10px;  
+}
+
+#logo__python{
+    width: 35px;
+}
+
+#logo__figma{
+    width: 15px;
+}
+
+
+
